@@ -1,38 +1,187 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  text-align: center;
+  background-color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.sub-cont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width:400px;
+  background-color: rgb(29, 165, 165);
+  border-radius: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.count {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.increment,
+.decrement {
+  width: 40px;
+  height: 40px;
+  background-color: #edffee;
+  color: rgb(10, 9, 9);
+  border: none;
+  border-radius: 20%;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 10px 10px;
+}
+
+.increment::before,
+.decrement::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin:3px 3px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.increment::before {
+  border-bottom: 20px solid currentColor;
+  margin-top: 1px;
+}
+
+.decrement::before {
+  border-top: 20px solid currentColor;
+  margin-bottom: 1px;
+}
+
+
+
+.increment-ten::before,
+.decrement-ten::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-radius: 2px;
+}
+
+.increment-ten::before {
+  border-right: 20px solid currentColor;
+  margin-left: 5px;
+}
+
+.decrement-ten::before {
+  border-left: 20px solid currentColor;
+  margin-right: 5px;
+}
+
+
+
+ */
+
+
+ .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: black;
+}
+
+.sub-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 400px;
+  background-color: rgb(29, 165, 165);
+  border-radius: 20px;
+}
+
+.count {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin: 20px 10px 25px 20px; /* Adjust the margin-top value as per your preference */
+  color: #fff;
+}
+
+
+.button-group {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.increment,
+.decrement {
+  width: 40px;
+  height: 40px;
+  background-color: #edffee;
+  color: rgb(10, 9, 9);
+  border: none;
+  border-radius: 20%;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 10px 10px;
+}
+
+.increment::before,
+.decrement::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin: 3px 3px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.increment::before {
+  border-bottom: 20px solid currentColor;
+  margin-top: 1px;
+}
+
+.decrement::before {
+  border-top: 20px solid currentColor;
+  margin-bottom: 1px;
+}
+
+.increment-ten::before,
+.decrement-ten::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-radius: 2px;
+}
+
+.increment-ten::before {
+  border-right: 20px solid currentColor;
+  margin-left: 5px;
+}
+
+.decrement-ten::before {
+  border-left: 20px solid currentColor;
+  margin-right: 5px;
 }
